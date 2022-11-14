@@ -1,5 +1,6 @@
 #!/bin/bash
 apt-get update
+apt-get install net-tools
 apt install build-essential
 apt-get -y install clang
 apt install --assume-yes git clang curl libssl-dev
@@ -15,3 +16,4 @@ rustup show
 rustup +nightly show
 rustup uninstall stable
 rustup install stable
+apt-get update
