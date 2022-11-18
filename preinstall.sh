@@ -5,7 +5,7 @@ apt install build-essential
 apt-get -y install clang
 apt install --assume-yes git clang curl libssl-dev
 apt install --assume-yes git clang curl libssl-dev llvm libudev-dev make protobuf-compiler
-echo "1" | curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs |  bash -s -y
+ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | echo "1" | |  bash -s -y
 export PATH="$HOME/.cargo/bin:$PATH"
 rustc --version
 rustup default stable
